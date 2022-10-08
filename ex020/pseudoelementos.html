@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos </title>
+    <style>
+        a:visited{
+            color: red;
+            t
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content:" ☞ ";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        a::after{
+             content: " ☜ "; 
+             text-decoration: none;
+             font-weight: normal;
+             color: darkgray;
+               
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisandos Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UC4OD-p61HvXHI-PDOjFxL6A" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.instagram.com/emy_pontes007" target="_blank">instagram</a></li>
+
+    </ul>
+</body>
+</html>
