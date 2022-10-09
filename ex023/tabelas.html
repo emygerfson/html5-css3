@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;   /*--Alinhamento horizontal--*/
+            vertical-align: middle;/*--Alinhamento vertical-- */
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            height: 400px;
+        }
+        tr#l1{
+            background-color: aqua;
+        }
+        tr#l2{
+            background-color: burlywood;
+        }
+        tr#l3{
+            background-color: cyan;
+        }
+        tr#l4{
+            background-color: chartreuse;
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!--
+        hierarquia de tabelas simples.
+        table = tabela
+        table row = linha da tabela
+            table header = cabeçalho da tabela
+            table data = dados da tabela
+           -->
+    <table>
+        <tr id="l1"><!--primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr id="l2"><!-- segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr id="l3"><!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            
+        </tr>
+        <tr id="l4"><!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
