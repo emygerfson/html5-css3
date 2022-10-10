@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgrey;
+            text-decoration: underline;
+
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+            
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
+            
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+        } 
+
+                        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            text-align: center;                        
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!--Anatonia das tabelas grandes
+        table:
+            thead=cabeça da tabela
+                dentro pode ter td , th, tr 
+            tbody=corpo da tabela
+               dentro pode ter td , th, tr
+            tfoot=roda pe da tabela
+                dentro pode ter td , th, tr
+    -->
+    <table>
+        <caption>Total de População dos Estados</caption>
+        <Thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População 2020</th> 
+                <th scope="col">População 2021</th>
+                <th scope="col">% de crescimento</th>
+            </tr>
+        </Thead>
+
+        <tbody>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num"">45 915 049</td>
+                <td class="num"">46 649 132</td>
+                <td class="num"">+13.05%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"">19 597 330</td>
+                <td class="num"">21 411 923</td>
+                <td class="num"">+9.26%</td>
+
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15 989 929</td>
+                <td class="num">17 463 349</td>
+                <td class="num">+9.21%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+                <td class="num">14 985 284</td>
+                <td class="num">+6.91%</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">10 444 526</td>
+                <td class="num">10 444 526</td>
+                <td class="num">+11.04%</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+                <td class="num">11 466 630</td>
+                <td class="num">+7.23%</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">8 796 448</td>
+                <td class="num">9 674 793</td>
+                <td class="num">+9.98%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+                <td class="num">9 240 580</td>
+                <td class="num">+9.32%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+                <td class="num">8 777 124</td>
+                <td class="num">+15.78%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de população</th>
+                <th class="num">141 487 549</th>
+                <th class="num">150 113 341</th>
+                <th class="num">% +91.78</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, natus adipisci. Quo hic quam expedita nisi animi consectetur ea, minima magni deleniti aliquam minus quibusdam beatae omnis, distinctio aliquid delectus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, officiis velit voluptas nulla, voluptatibus praesentium exercitationem possimus beatae quod molestiae necessitatibus harum illum et ex fugiat odio, aliquam nemo tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis sint accusantium iusto soluta nihil quo mollitia, animi voluptas blanditiis. Voluptatum deleniti beatae facilis dicta aperiam perspiciatis veniam culpa aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae nulla fugiat officia incidunt, corrupti quisquam eius laboriosam magni suscipit id quo unde inventore. Culpa nihil totam velit debitis asperiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in error omnis corrupti praesentium! Vitae voluptas aut neque laborum exercitationem, aperiam quasi, quos eius ipsum nam, quis mollitia magnam nobis.< lo
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt quisquam et reiciendis distinctio officia earum ullam quia ad corrupti? Cupiditate qui, doloribus dignissimos magnam repellendus sapiente vel temporibus suscipit!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a natus aperiam quam ex? Laboriosam pariatur ex odio adipisci, maiores iste officiis soluta culpa vero enim sed quos temporibus? Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit alias veniam voluptatem eligendi exercitationem sint labore, nam repellendus corporis sit dolores illum obcaecati, doloremque cupiditate laboriosam? Nobis, quidem fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde dolorum enim quas repudiandae at vitae modi quia consequatur molestias consequuntur sunt laudantium, blanditiis voluptatum? Ex natus quidem obcaecati id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam, iusto ex nostrum dolor quaerat, recusandae, accusantium voluptates doloremque fugit tempore culpa aliquam asperiores repellendus laborum aperiam. Consequatur, qui sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum tenetur dolore delectus atque, dolor architecto iste modi blanditiis quasi labore cum eveniet voluptatum libero ipsum corporis necessitatibus velit nihil. Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius facere, delectus vel labore iure fugit! Corporis inventore recusandae aliquid aut libero, quis sed labore sunt ullam amet eaque temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis mollitia accusantium voluptatem recusandae cupiditate voluptatum eius dicta cumque officia, culpa, fugit, molestias debitis ad fugiat iste obcaecati ea velit repellendus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quis, odio recusandae velit eligendi eveniet, perferendis, ea dolor beatae dolores animi iste accusantium dolorem delectus sequi sit tempore sed nam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque eaque iure, amet eligendi illo! Suscipit, mollitia. Facilis fugiat, cupiditate doloremque nobis porro at. Aperiam eligendi voluptate ipsa eius aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit et esse, eveniet cum sed placeat ipsam sunt ipsum laudantium rerum temporibus doloribus magni, impedit assumenda. Iste dolorum quia vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias repellat suscipit repellendus recusandae obcaecati ullam quia rerum. Nam magnam praesentium aliquid architecto aliquam quia sunt maiores quod magni fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum laudantium sit mollitia odit maiores fuga blanditiis quod cum maxime amet dicta, qui adipisci veritatis reprehenderit nobis provident, itaque placeat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam possimus iusto dolorem dicta delectus distinctio repellendus enim magni asperiores. Quam ratione ut recusandae tenetur aliquam quisquam expedita deserunt nesciunt perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, iure? Atque dolores odio eaque est nemo, placeat fuga provident quos molestias. Culpa quis dolor minus magni nostrum, saepe dicta molestiae? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod non recusandae labore sequi alias exercitationem accusantium voluptatibus, sapiente delectus corporis. Possimus, voluptatum explicabo? Neque ipsam enim explicabo quia deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus est explicabo alias! Eligendi quos incidunt tenetur! Reprehenderit, vero esse. Maiores assumenda dolorem quae labore fugit amet, rem id beatae nulla. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos cupiditate saepe amet quas quae, earum debitis inventore unde maiores dolorum ipsam voluptate alias, quo culpa eaque! Perspiciatis consectetur explicabo rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium voluptas, voluptates fuga culpa a dolor, nostrum officia commodi tenetur libero quo assumenda ipsum cupiditate velit alias placeat porro? Facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem illo hic nostrum commodi reprehenderit tempora culpa? Aut obcaecati debitis sit doloribus, minima cupiditate, vero nulla nostrum voluptates illo iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cupiditate tempora praesentium accusantium, eos ex dolorem, voluptatem quam adipisci enim vero velit, voluptatum soluta illo! Itaque ducimus dignissimos voluptatibus velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum iste, consequuntur expedita quis fugiat cumque deleniti eveniet eius. Natus vitae mollitia nihil repellendus atque optio eius doloremque! Iusto, labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex ipsam quos beatae. Placeat, ad tenetur neque, explicabo earum aspernatur voluptates omnis hic doloremque mollitia libero quam sit id laboriosam.</p>
+
+</body>
+</html>
