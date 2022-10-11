@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: lightgray;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        .centro{
+            text-align: center;
+        }
+        .esquerda{
+            text-align: left;
+        }
+        .colorir{
+            background-color: lightgray;
+        }
+            
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Notas</h1>
+    <table>
+        <caption>Notas Escolares</caption>
+        <thead>
+            <tr>
+                <th rowspan="2n">ÁREA</th>
+                <th rowspan="2n">DISCIPLINA</th>
+                <th colspan="2n">NOTAS</th>
+                <th rowspan="2n">MÉDIA</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4n">EXATAS</th>
+                <td>Matematica</td>
+                <td class="centro">7.0</td>
+                <td class="centro">8.0</td>
+                <td class="centro">7.5</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td class="centro">8.3</td>
+                <td class="centro">7.8</td>
+                <td class="centro">8.05</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td class="centro">7.2</td>
+                <td class="centro">6.8</td>
+                <td class="centro">7.0</td>
+
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="centro">6.5</td>
+                <td class="centro">7.3</td>
+                <td class="centro">6.9</td>
+            </tr>
+            <tr class="colorir">
+                <th colspan="4n" class="esquerda">MEDIAS DE EXATAS</th>
+                <td class="centro">7,36</td>
+            </tr>
+            <tr>
+                <th rowspan="2n">HUMANAS</th>
+                <td>HISTORIA</td>
+                <td class="centro">7.0</td>
+                <td class="centro">8.3</td>
+                <td class="centro">7.65</td>
+            </tr>
+            <tr>
+                <td>GEOGRAFIA</td>
+                <td class="centro">8.0</td>
+                <td class="centro">8.0</td>
+                <td class="centro">8.0</td>
+            </tr>
+            <tr class="colorir">
+                <th colspan="4n" class="esquerda">MEDIAS DE HUMANAS</th>
+                <td class="centro">7.85</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
